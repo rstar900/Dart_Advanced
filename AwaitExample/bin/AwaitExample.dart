@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:async';
 
-//need to add async modifier to main function or whatever function where await is used
+//need to add async modifier to main function or whatever function where await is used (basically making main() async as well)
 Future<void> main(List<String> arguments) async {
 
   var path = Directory.current.path + '/MyFile.txt';
