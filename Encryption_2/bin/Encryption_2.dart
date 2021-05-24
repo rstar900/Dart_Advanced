@@ -12,7 +12,7 @@ void main(List<String> arguments) {
   //key derivation algorithm
   var pkcs = new KeyDerivator('SHA-1/HMAC/PBKDF2');
 
-  //parameters for the algorithm
+  //parameters for the algorithm (for some reason 16 is necessary in parameter)
   var params = new Pbkdf2Parameters(salt, 100, 16);
 
   //initialize algo with above parameters
